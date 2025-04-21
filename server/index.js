@@ -21,8 +21,8 @@ app.use(helmet());
 // Update CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? 'https://Akritik.netlify.app'  // Your Netlify URL
-    : 'http://localhost:3000',
+    ? ['https://akriti-sharma.netlify.app']  // Fix Netlify URL and add Railway
+    : ['http://localhost:3000'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
