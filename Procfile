@@ -1,0 +1,1 @@
+web: node --version && node server/index.js
